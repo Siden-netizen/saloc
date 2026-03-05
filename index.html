@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Mark | Game Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#Home" class="logo"><span>Nicholas Mark</span></a>
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <button class="visit-btn">Visit Github</button>
+        </a>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="Home" class="Home">
+        <div class="Home-container">
+            <div class="img-wrapper">
+                <img src="image.jpg" alt="Nicholas Mark" onerror="this.src='https://via.placeholder.com/350x350/1a1a2e/ffffff?text=NM'">
+            </div>
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Nicholas Mark</h1>
+                    <span class="role">Game Developer</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://www.facebook.com/share/1EAyAjuNCi/" target="_blank" rel="noopener noreferrer" class="btn">Follow me on Facebook</a>
+                    <a href="https://www.instagram.com/saloc_6969" target="_blank" rel="noopener noreferrer" class="btn">Add me on Instagram</a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/share/1EAyAjuNCi/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/saloc_6969" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-mobile"></i>
+                    <span>Mobile Games</span>
+                    <p>I really like playing ML. I've played many tournaments and bet games, and I'm also a Masters player at Nemsu LC — we went to Pagadian. If only we had the budget, we could have gone to Camiguin (National).</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-basketball"></i>
+                    <span>Sports</span>
+                    <p>In sports I also play basketball, football, volleyball, and badminton. I may not be a pro, but I give it my all every time.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-car"></i>
+                    <span>Bonding With Friends</span>
+                    <p>One of the things I love is bonding with my friends — playing mobile games, sports, strolling, traveling, just being with them and having fun.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>Food</span>
+                    <p>Another comfort for me is food. My favorites: adobo, chicken curry, lechon. For snacks I love pancit canton especially midnight snacks, fries, burger, pizza, and ice coffee.</p>
+                </div>
+                <div class="grid-card grid-card-wide">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Family</span>
+                    <p>When it comes to family, I love bonding with them — playing ML with my brother and keeping up with everyone every day.</p>
+                </div>
+            </div>
+            <div class="about-img-wrapper">
+                <img src="image.jpg" alt="Nicholas Mark" onerror="this.src='https://via.placeholder.com/400x500/1a1a2e/ffffff?text=NM'">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project1.jpg" alt="Project 1" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/ffffff?text=Project+1'">
+                    <div class="play-overlay" onclick="openVideoModal('project1.jpg')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <h3>Project 1</h3>
+                <p>We mimicked a famous artist — this project features my costume design and performance recreation.</p>
+                <div class="btn-group">
+                    <div class="btn demo-btn" onclick="openVideoModal('project1.jpg')">Live Demo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project2.jpg" alt="Project 2" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/ffffff?text=Project+2'">
+                    <div class="play-overlay" onclick="openVideoModal('Video2.mp4')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <h3>Project 2</h3>
+                <p>This project tackled steps and body movement coordination.</p>
+                <div class="btn-group">
+                    <div class="btn demo-btn" onclick="openVideoModal('Video2.mp4')">Live Demo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project3.jpg" alt="Project 3" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/ffffff?text=Project+3'">
+                    <div class="play-overlay" onclick="openVideoModal('Video3.mp4')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <h3>Project 3</h3>
+                <p>A video project about camera angles and movement in Multimedia Arts, under instructor Sir Pitos.</p>
+                <div class="btn-group">
+                    <div class="btn demo-btn" onclick="openVideoModal('Video3.mp4')">Live Demo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project4.jpg" alt="Project 4" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/ffffff?text=Project+4'">
+                    <div class="play-overlay" onclick="openVideoModal('project4.jpg')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <h3>Project 4</h3>
+                <p>An exciting project showcasing creative development and design skills.</p>
+                <div class="btn-group">
+                    <div class="btn demo-btn" onclick="openVideoModal('project4.jpg')">Live Demo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project5.jpg" alt="Project 5" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/ffffff?text=Project+5'">
+                    <div class="play-overlay" onclick="openVideoModal('project5.jpg')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <h3>Project 5</h3>
+                <p>Another creative project demonstrating multimedia and development expertise.</p>
+                <div class="btn-group">
+                    <div class="btn demo-btn" onclick="openVideoModal('project5.jpg')">Live Demo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="project6.jpg" alt="Project 6" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/ffffff?text=Project+6'">
+                    <div class="play-overlay" onclick="openVideoModal('Video6.mp4')">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <h3>Project 6</h3>
+                <p>Built and coded a robot capable of obstacle detection and line tracking in Embedded Systems, under instructor Sir Dexter.</p>
+                <div class="btn-group">
+                    <div class="btn demo-btn" onclick="openVideoModal('Video6.mp4')">Live Demo</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="modal-overlay" onclick="closeVideoModal(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeVideoModal()"><i class="fa-solid fa-xmark"></i></button>
+            <iframe id="videoFrame" src="" frameborder="0" allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <video id="localVideoPlayer" controls style="display:none; width:100%; height:100%; background:#000;"></video>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-sub">Send me a message and I'll get back to you!</p>
+            <div class="contact-form">
+                <div class="input-group">
+                    <input type="text" id="senderName" placeholder="Your Name" />
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="senderEmail" placeholder="your@email.com" />
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-group textarea-group">
+                    <textarea id="messageText" placeholder="Write your message here..." rows="5"></textarea>
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <div class="btn submit-btn" id="submitBtn" onclick="sendMessage()">
+                    <span id="btnText"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                    <span id="btnLoading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+                </div>
+                <p id="formStatus" class="form-status"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1EAyAjuNCi/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/saloc_6969" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="copyright">© All Rights Reserved | Nicholas Mark</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
