@@ -197,25 +197,26 @@
         <div class="input-box">
             <h2 class="section-title">Contact Me</h2>
             <p class="contact-sub">Send me a message and I'll get back to you!</p>
-            <div class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/colasperez47@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Portfolio Message!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 <div class="input-group">
-                    <input type="text" id="senderName" placeholder="Your Name" />
+                    <input type="text" name="name" placeholder="Your Name" required />
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-group">
-                    <input type="email" id="senderEmail" placeholder="your@email.com" />
+                    <input type="email" name="email" placeholder="your@email.com" required />
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="input-group textarea-group">
-                    <textarea id="messageText" placeholder="Write your message here..." rows="5"></textarea>
+                    <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
                     <i class="fa-solid fa-message"></i>
                 </div>
-                <div class="btn submit-btn" id="submitBtn" onclick="sendMessage()">
-                    <span id="btnText"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
-                    <span id="btnLoading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
-                </div>
-                <p id="formStatus" class="form-status"></p>
-            </div>
+                <button type="submit" class="btn submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </form>
         </div>
     </section>
 
@@ -237,7 +238,6 @@
         <p class="copyright">© All Rights Reserved | Nicholas Mark</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
